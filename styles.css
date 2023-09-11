@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+    font-family: sans-serif;
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Estilos para inputs y botones */
+.espacios input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.espacios button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.botones button {
+    margin-right: 10px;
+}
+
+/* Estilos para diseño responsive */
+@media screen and (max-width: 600px) {
+    .contenedor {
+        width: 100%;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .espacios input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+
+    .espacios button {
+        padding: 8px 16px;
+    }
+
+    .botones button {
+        margin-right: 5px;
+    }
+}
